@@ -1,0 +1,66 @@
+{
+  "name": "thirtyseven/overview",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/overview/0.1.0/thirtyseven-overview-0.1.0.praypkg",
+      "artifact_hash": "sha256:1b7a2f361339b85f51de188466a33b096dcd18b947079442ccbb6c06e07f291b",
+      "tree_hash": "sha256:b0c8f03c86e48d7fc049d706ada815f1c1efab965bcbcba00299ce382d291a38",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "overview"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:e345c32c24ce9aed79fa845bed3e8847cb5e8a8530b1caa5e5cc8d62823fef0f",
+      "derived_metadata": {
+        "summary": "Catalog of thirtyseven Rails prayer packages — Package catalog and usage notes",
+        "topics": [
+          "thirtyseven",
+          "rails",
+          "37signals",
+          "agent",
+          "review"
+        ],
+        "categories": [
+          "automation",
+          "security"
+        ],
+        "possible_effects": [
+          "surfaces trust-sensitive behavior",
+          "reduces manual steps"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              6,
+              0,
+              5,
+              6,
+              5,
+              6,
+              2,
+              4,
+              1,
+              20,
+              4,
+              9,
+              6,
+              6,
+              15,
+              8
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 1010,
+        "token_count": 103
+      }
+    }
+  ]
+}

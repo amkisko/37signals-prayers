@@ -1,0 +1,64 @@
+{
+  "name": "thirtyseven/rails-hotwire-realtime",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/rails-hotwire-realtime/0.1.0/thirtyseven-rails-hotwire-realtime-0.1.0.praypkg",
+      "artifact_hash": "sha256:2ebb80f037345a3fe6917fec393698af581a3f00b70b0272d946f854d2abd1d9",
+      "tree_hash": "sha256:103418b4cda09c275fef0cc4109a267924217e1acc8787ec67e003b66fc8c9e3",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "skill"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:99cc49b16411ae30d234f3c40f2aa33f7b64d81596b08e4c49e712e72ece12e5",
+      "derived_metadata": {
+        "summary": "Hotwire, Turbo, Stimulus, and ActionCable realtime practices — # thirtyseven/rails-hotwire-realtime",
+        "topics": [
+          "turbo",
+          "broadcast",
+          "broadcasts",
+          "morph",
+          "streams"
+        ],
+        "categories": [
+          "general"
+        ],
+        "possible_effects": [
+          "improves package discovery"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              41,
+              38,
+              22,
+              45,
+              29,
+              44,
+              19,
+              19,
+              40,
+              38,
+              32,
+              24,
+              36,
+              26,
+              23,
+              36
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 7980,
+        "token_count": 512
+      }
+    }
+  ]
+}

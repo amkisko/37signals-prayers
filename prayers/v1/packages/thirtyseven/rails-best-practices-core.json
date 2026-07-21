@@ -1,0 +1,64 @@
+{
+  "name": "thirtyseven/rails-best-practices-core",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/rails-best-practices-core/0.1.0/thirtyseven-rails-best-practices-core-0.1.0.praypkg",
+      "artifact_hash": "sha256:49f3f979ecf75a6d9d2c84ee6af39a318eb2ce03bfd8b08d0b2015c077c51bc6",
+      "tree_hash": "sha256:734829f6bd76d3fd8ac9b03d488887518c39e2ac7f2206b08bc40c781f0f9c3a",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "skill"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:60dade67217b6972990e35d605a32ce3df71b8b2f2c8622e9e550c106ec42789",
+      "derived_metadata": {
+        "summary": "Core Rails architecture and modeling from 37signals codebases — # thirtyseven/rails-best-practices-core",
+        "topics": [
+          "rails",
+          "user",
+          "closure",
+          "core",
+          "domain"
+        ],
+        "categories": [
+          "security"
+        ],
+        "possible_effects": [
+          "surfaces trust-sensitive behavior"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              19,
+              31,
+              31,
+              43,
+              36,
+              31,
+              17,
+              30,
+              34,
+              38,
+              26,
+              28,
+              27,
+              41,
+              33,
+              47
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 7201,
+        "token_count": 512
+      }
+    }
+  ]
+}

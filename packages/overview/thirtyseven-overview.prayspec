@@ -1,0 +1,13 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/overview"
+  spec.version = "0.1.0"
+  spec.summary = "Catalog of thirtyseven Rails prayer packages"
+  spec.files = ["README.md", "exports/overview.md"]
+  spec.exports = {
+    "overview" => {
+      type: "fragment",
+      path: "exports/overview.md",
+      summary: "Package catalog and usage notes"
+    }
+  }
+end

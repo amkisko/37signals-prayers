@@ -1,0 +1,131 @@
+prayfile_lock = "1"
+spec = "0.1"
+generated_by = "pray 1.2.0"
+manifest_hash = "sha256:24de032f7e0622ed297ef0460cee6a7582eefbcb40cf02f1670f3de3cee20c47"
+source = []
+
+[[package]]
+name = "thirtyseven/dhh"
+version = "0.1.0"
+path = "./packages/dhh"
+tree_hash = "sha256:69038d87ecd506d7be5a5108b5d4ca433e5e3f596821ebf0073f5d0afde4e455"
+artifact_hash = "sha256:69038d87ecd506d7be5a5108b5d4ca433e5e3f596821ebf0073f5d0afde4e455"
+artifact = "path:./packages/dhh"
+exports = ["skill"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/getting-started"
+version = "0.1.0"
+path = "./packages/getting-started"
+tree_hash = "sha256:82f35e47996320439373342e8d9354db75b5c6203062714a3d61474f67c7f733"
+artifact_hash = "sha256:82f35e47996320439373342e8d9354db75b5c6203062714a3d61474f67c7f733"
+artifact = "path:./packages/getting-started"
+exports = ["getting-started"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/overview"
+version = "0.1.0"
+path = "./packages/overview"
+tree_hash = "sha256:b0c8f03c86e48d7fc049d706ada815f1c1efab965bcbcba00299ce382d291a38"
+artifact_hash = "sha256:b0c8f03c86e48d7fc049d706ada815f1c1efab965bcbcba00299ce382d291a38"
+artifact = "path:./packages/overview"
+exports = ["overview"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/rails-best-practices-core"
+version = "0.1.0"
+path = "./packages/rails-best-practices-core"
+tree_hash = "sha256:734829f6bd76d3fd8ac9b03d488887518c39e2ac7f2206b08bc40c781f0f9c3a"
+artifact_hash = "sha256:734829f6bd76d3fd8ac9b03d488887518c39e2ac7f2206b08bc40c781f0f9c3a"
+artifact = "path:./packages/rails-best-practices-core"
+exports = ["skill"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/rails-hotwire-realtime"
+version = "0.1.0"
+path = "./packages/rails-hotwire-realtime"
+tree_hash = "sha256:103418b4cda09c275fef0cc4109a267924217e1acc8787ec67e003b66fc8c9e3"
+artifact_hash = "sha256:103418b4cda09c275fef0cc4109a267924217e1acc8787ec67e003b66fc8c9e3"
+artifact = "path:./packages/rails-hotwire-realtime"
+exports = ["skill"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/rails-jobs"
+version = "0.1.0"
+path = "./packages/rails-jobs"
+tree_hash = "sha256:dec928a6b38582a0dacdc888dddb14a5e6b248cf4a2b9942d4f2159fe8861fa6"
+artifact_hash = "sha256:dec928a6b38582a0dacdc888dddb14a5e6b248cf4a2b9942d4f2159fe8861fa6"
+artifact = "path:./packages/rails-jobs"
+exports = ["skill"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/rails-migrations"
+version = "0.1.0"
+path = "./packages/rails-migrations"
+tree_hash = "sha256:7d87ea94bba75dd2b79c7b032d317acddf81a82d2aca7c1df8ae9c3590dfeefe"
+artifact_hash = "sha256:7d87ea94bba75dd2b79c7b032d317acddf81a82d2aca7c1df8ae9c3590dfeefe"
+artifact = "path:./packages/rails-migrations"
+exports = ["skill"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/rails-security-multitenancy"
+version = "0.1.0"
+path = "./packages/rails-security-multitenancy"
+tree_hash = "sha256:514c4b8816bd6361fbbfc8cb1b42aef1673203197e57f2cfa24593fd334997be"
+artifact_hash = "sha256:514c4b8816bd6361fbbfc8cb1b42aef1673203197e57f2cfa24593fd334997be"
+artifact = "path:./packages/rails-security-multitenancy"
+exports = ["skill"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/rails-testing"
+version = "0.1.0"
+path = "./packages/rails-testing"
+tree_hash = "sha256:b5a7c201e53ccff94cb05562935c8cc939ca9fb49b58b91254180bfcea8e0594"
+artifact_hash = "sha256:b5a7c201e53ccff94cb05562935c8cc939ca9fb49b58b91254180bfcea8e0594"
+artifact = "path:./packages/rails-testing"
+exports = ["skill"]
+dependencies = []
+
+[[package]]
+name = "thirtyseven/rails-webhooks"
+version = "0.1.0"
+path = "./packages/rails-webhooks"
+tree_hash = "sha256:a2c624c4d3cd34974b789e028a2da238046ace5c584ffa70f582adae3067d269"
+artifact_hash = "sha256:a2c624c4d3cd34974b789e028a2da238046ace5c584ffa70f582adae3067d269"
+artifact = "path:./packages/rails-webhooks"
+exports = ["skill"]
+dependencies = []
+
+[[target]]
+name = "agents"
+outputs = ["AGENTS.md"]
+
+[[managed_span]]
+id = "5c45d63b"
+target = "AGENTS.md"
+open_line = 10
+close_line = 34
+ideal_checksum = "sha256:82935f27e8e339e65a5b8adadbad1e41ffc0d6a0101fad3c55317e3cbc2f31bb"
+package = "thirtyseven/getting-started"
+export = "getting-started"
+source_checksum = "sha256:82f35e47996320439373342e8d9354db75b5c6203062714a3d61474f67c7f733"
+silenced = false
+
+[[managed_span]]
+id = "5e3e3529"
+target = "AGENTS.md"
+open_line = 36
+close_line = 53
+ideal_checksum = "sha256:c0894b440353b8974655ac6947c59b1564ecf473e2ad361acf457ef1504d1973"
+package = "thirtyseven/overview"
+export = "overview"
+source_checksum = "sha256:b0c8f03c86e48d7fc049d706ada815f1c1efab965bcbcba00299ce382d291a38"
+silenced = false

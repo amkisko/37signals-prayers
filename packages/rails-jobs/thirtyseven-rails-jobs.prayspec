@@ -1,0 +1,16 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/rails-jobs"
+  spec.version = "0.1.0"
+  spec.summary = "Active Job design, Solid Queue, retries, and orchestration"
+  spec.files = [
+    "README.md",
+    "skills/rails-jobs/SKILL.md"
+  ]
+  spec.exports = {
+    "skill" => {
+      type: "folder",
+      path: "skills/rails-jobs",
+      summary: "Active Job design, Solid Queue, retries, and orchestration"
+    }
+  }
+end

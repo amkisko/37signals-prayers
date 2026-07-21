@@ -1,0 +1,64 @@
+{
+  "name": "thirtyseven/rails-security-multitenancy",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/rails-security-multitenancy/0.1.0/thirtyseven-rails-security-multitenancy-0.1.0.praypkg",
+      "artifact_hash": "sha256:c2344e6bc52953303d900837d80b8bd6dd275c35260d7068e941c18a66f1c0d0",
+      "tree_hash": "sha256:514c4b8816bd6361fbbfc8cb1b42aef1673203197e57f2cfa24593fd334997be",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "skill"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:8078f4986c6bcf74c6653f318f4e94304803db34f8e288745f55dbb394b7a6a3",
+      "derived_metadata": {
+        "summary": "Security and multi-tenant Rails safety practices — # thirtyseven/rails-security-multitenancy",
+        "topics": [
+          "tenant",
+          "account",
+          "user",
+          "current",
+          "rails"
+        ],
+        "categories": [
+          "security"
+        ],
+        "possible_effects": [
+          "surfaces trust-sensitive behavior"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              40,
+              21,
+              25,
+              29,
+              40,
+              33,
+              21,
+              31,
+              23,
+              53,
+              39,
+              41,
+              25,
+              37,
+              19,
+              35
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 7081,
+        "token_count": 512
+      }
+    }
+  ]
+}

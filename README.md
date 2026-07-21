@@ -1,141 +1,93 @@
-# 37signals Skills
+# thirtyseven shared prayers
 
-Agent skills and a reference guide that teach AI coding assistants to write Rails the 37signals way — extracted from Fizzy, Campfire, and 100+ of DHH's code reviews.
+Central distribution point for unofficial Rails agent guidance distilled from public 37signals codebases (Campfire, Fizzy) and DHH review patterns.
 
-> **Unofficial.** This is a community project based on 37signals' public code and discussions — not affiliated with or endorsed by 37signals.
+> **Unofficial.** Community packages based on public code and discussions — not affiliated with or endorsed by 37signals.
 
-Drop the skills into Claude Code or Cursor and your agent starts applying the same patterns 37signals uses: rich domain models over service objects, state as records, CRUD-everything routing, fixtures over factories, vanilla Rails over gems.
+Packages here are reusable inference input for [pray](https://github.com/kiskolabs/pray). Product overview: [pray.kisko.dev](https://pray.kisko.dev).
 
-## The Skills
+## Install pray
 
-| Skill | What it covers | Invocation |
-|---|---|---|
-| [`rails-best-practices-core`](skills/rails-best-practices-core/SKILL.md) | Architecture, naming, modeling patterns, REST routing, authorization — the baseline for all Rails work | Automatic |
-| [`rails-hotwire-realtime`](skills/rails-hotwire-realtime/SKILL.md) | Turbo Streams/Frames, morphing, Stimulus, ActionCable, presence, optimistic UI, web push | On demand |
-| [`rails-jobs`](skills/rails-jobs/SKILL.md) | Active Job design, `_later`/`_now` conventions, Solid Queue, recurring tasks, retry policy | On demand |
-| [`rails-migrations`](skills/rails-migrations/SKILL.md) | Safe schema changes, staged rollouts, script backfills, multi-DB/multi-adapter setups | On demand |
-| [`rails-security-multitenancy`](skills/rails-security-multitenancy/SKILL.md) | Path-based tenancy, Identity→Session→User auth, scoped lookups, SSRF, CSRF, rate limiting | On demand |
-| [`rails-testing`](skills/rails-testing/SKILL.md) | Minitest + fixtures, coverage budget, Turbo/broadcast assertions, multi-tenant test wiring | On demand |
-| [`rails-webhooks`](skills/rails-webhooks/SKILL.md) | Outbox delivery, failure classification, delinquency circuit breakers, payload signing | On demand |
-| [`dhh`](skills/dhh/SKILL.md) | Review code like DHH would — direct, opinionated, allergic to over-engineering | `/dhh` |
-
-"On demand" skills are marked `disable-model-invocation: true` so they don't bloat every request — invoke them explicitly (e.g. as a slash command) or let the core skill point to them.
-
-## Installation
-
-### Claude Code
-
-Copy the skills you want into your personal or project skills directory:
-
-```bash
-git clone https://github.com/marckohlbrugge/37signals-skills.git
-
-# Personal (all projects)
-cp -R 37signals-skills/skills/* ~/.claude/skills/
-
-# Or per-project
-cp -R 37signals-skills/skills/* your-app/.claude/skills/
+```sh
+cargo install --git https://github.com/kiskolabs/pray --locked pray
 ```
 
-Then ask for a review with `/dhh`, or just write Rails code — the core skill activates automatically.
+## Use these prayers in a project
 
-### Cursor
+From your project root:
 
-```bash
-# Per-project
-cp -R 37signals-skills/skills/* your-app/.cursor/skills/
+```sh
+pray init
 ```
 
-### Codex
+Local sibling checkout:
 
-Copy the skills into your global Codex skills directory:
+```prayfile
+source "thirtyseven", path: "../37signals-prayers/prayers"
 
-```bash
-git clone https://github.com/marckohlbrugge/37signals-skills.git
-mkdir -p ~/.agents/skills
-cp -R 37signals-skills/skills/* ~/.agents/skills/
+target :agents do
+  output "AGENTS.md"
+  skills ".agents/skills"
+end
+
+agent "thirtyseven/rails-best-practices-core", "~> 0.1", source: "thirtyseven", exports: ["skill"]
+agent "thirtyseven/dhh", "~> 0.1", source: "thirtyseven", exports: ["skill"]
+
+render mode: :managed, conflict: :fail, churn: :minimal
 ```
 
-Codex can invoke skills explicitly with `$skill-name` (for example, `$dhh`) or automatically when a task matches the skill description. Restart Codex if the new skills do not appear.
+After this repository is published, consumers can use a git source:
 
-### Other agents
-
-Each skill is a plain `SKILL.md` with YAML frontmatter ([Agent Skills format](https://agentskills.io)). Most SKILL.md-compatible tools can load them as-is, or paste the contents into your system prompt / rules file.
-
-### Staying up to date
-
-Clone the repo somewhere permanent and symlink instead of copying:
-
-```bash
-ln -s "$(pwd)/37signals-skills/skills/"* ~/.claude/skills/
+```prayfile
+source "thirtyseven", git: "https://github.com/amkisko/37signals-prayers", distribution: "prayers"
+agent "thirtyseven/rails-best-practices-core", "~> 0.1", source: "thirtyseven", exports: ["skill"]
 ```
 
-For Codex:
+Resolve and render:
 
-```bash
-mkdir -p ~/.agents/skills
-ln -s "$(pwd)/37signals-skills/skills/"* ~/.agents/skills/
+```sh
+pray install
+pray plan
+pray apply
+pray verify
 ```
 
-Then `git pull` to get updates.
+## Publish or update a package
 
-## The Guide
+```sh
+make publish
+make release
+```
 
-The skills are distilled from a longer-form reference covering ~35 topics, kept in [`guide/`](guide/). It was extracted from analyzing 265 pull requests in 37signals' Fizzy codebase — not just the final code, but the reviews, trade-offs, and iterations that led to it.
+## Package catalog
 
-**Core Rails:** [Routing](guide/routing.md) · [Controllers](guide/controllers.md) · [Models](guide/models.md) · [Views](guide/views.md)
+| Package | Type | Summary |
+|---------|------|---------|
+| `thirtyseven/getting-started` | fragment | Install pray and wire a consumer |
+| `thirtyseven/overview` | fragment | Catalog of thirtyseven packages |
+| `thirtyseven/rails-best-practices-core` | skill | Architecture, modeling, REST, authorization |
+| `thirtyseven/rails-hotwire-realtime` | skill | Turbo, Stimulus, ActionCable, presence |
+| `thirtyseven/rails-jobs` | skill | Active Job, Solid Queue, retries |
+| `thirtyseven/rails-migrations` | skill | Safe schema changes and rollouts |
+| `thirtyseven/rails-security-multitenancy` | skill | Tenancy, auth, SSRF, rate limits |
+| `thirtyseven/rails-testing` | skill | Minitest and fixtures |
+| `thirtyseven/rails-webhooks` | skill | Outbound delivery and signing |
+| `thirtyseven/dhh` | skill | DHH-style review (`/dhh`) |
 
-**Frontend:** [Hotwire](guide/hotwire.md) · [Stimulus](guide/stimulus.md) · [CSS](guide/css.md) · [Accessibility](guide/accessibility.md) · [Mobile](guide/mobile.md)
+Long-form topic notes for humans: [`docs/guide/`](docs/guide/).
 
-**Backend:** [Authentication](guide/authentication.md) · [Multi-Tenancy](guide/multi-tenancy.md) · [Database](guide/database.md) · [Background Jobs](guide/background-jobs.md) · [Caching](guide/caching.md) · [Performance](guide/performance.md)
+## Layout
 
-**Real-time & Communication:** [ActionCable](guide/actioncable.md) · [Notifications](guide/notifications.md) · [Email](guide/email.md)
+```text
+prayers/                  # distribution root (index, metadata, artifacts)
+packages/                 # package sources (.prayspec + content)
+docs/guide/               # long-form human reference (not packaged by default)
+Prayfile                  # publisher manifest for this repo
+Makefile                  # install, publish, release, serve, clean
+```
 
-**Features:** [Webhooks](guide/webhooks.md) · [Workflows](guide/workflows.md) · [Watching](guide/watching.md) · [Filtering](guide/filtering.md) · [AI/LLM Integration](guide/ai-llm.md)
+## Links
 
-**Rails Components:** [Active Storage](guide/active-storage.md) · [Action Text](guide/action-text.md)
-
-**Infrastructure & Testing:** [Security Checklist](guide/security-checklist.md) · [Testing](guide/testing.md) · [Configuration](guide/configuration.md) · [Observability](guide/observability.md)
-
-**Philosophy & People:** [Development Philosophy](guide/development-philosophy.md) · [What They Avoid](guide/what-they-avoid.md) · [DHH](guide/dhh.md) · [Jason Zimdars](guide/jason-zimdars.md) · [Jorge Manrubia](guide/jorge-manrubia.md)
-
-## Quick Start: The 37signals Way
-
-1. **Rich domain models** over service objects
-2. **CRUD controllers** over custom actions
-3. **Concerns** for horizontal code sharing
-4. **Records as state** over boolean columns
-5. **Database-backed everything** (no Redis)
-6. **Build it yourself** before reaching for gems
-7. **Ship to learn** - prototype quality is valid
-8. **Vanilla Rails is plenty** - maximize what Rails gives you
-
-## Important Caveats
-
-**LLM-Generated Content**: This guide and these skills were largely produced by an LLM (Claude) analyzing source code, PR descriptions, and code snippets. There may be hallucinations or inaccuracies. Take everything with a grain of salt and verify against actual implementations.
-
-**Code License**: Code examples extracted from Fizzy are licensed under the [O'Saasy License](https://osaasy.dev). Please review that license before using code snippets in your projects.
-
-## Acknowledgements
-
-- **[37signals](https://37signals.com)** for open-sourcing their codebases and giving the community a window into how they build software
-- **[Rob Zolkos](https://www.zolkos.com/2025/12/10/fizzys-pull-requests)** for his work identifying and cataloging the most educational PRs
-- **[Claude Code](https://claude.com/claude-code)** for creating this guide through iterative deep-dive research sessions
-
-## Further Reading
-
-- [Fizzy Source Code](https://github.com/basecamp/fizzy) - The official Fizzy repository with full git history
-- [Campfire Source Code](https://github.com/basecamp/once-campfire) - 37signals' open-source chat application, another reference implementation
-- [Fizzy's Pull Requests: Who Built What and How](https://www.zolkos.com/2025/12/10/fizzys-pull-requests) - Curated PR sequences organized by topic
-- [Fizzy JS Patterns](https://www.driftingruby.com/episodes/fizzy-js-patterns) - Drifting Ruby episode analyzing JavaScript patterns in Fizzy
-- [Read The Friendly Source Code](https://beautifulruby.com/code/fizzy) - Beautiful Ruby code review covering architecture and security observations
-- [Writebook by ONCE](https://igor.works/blog/writebook-by-once) - Code walkthrough of another 37signals open-source project
-- [On Writing Software Well](https://www.youtube.com/playlist?list=PL9wALaIpe0Py6E_oHCgTrD6FvFETwJLlx) - DHH's screencast series on software development practices
-
-## Disclaimer
-
-This is an unofficial project created by analyzing publicly available code and discussions. It is not affiliated with or endorsed by 37signals.
-
-## License
-
-Code examples extracted from Fizzy are licensed under the [O'Saasy License](https://osaasy.dev). All analysis, commentary, skills, and original content in this repo is licensed under MIT.
+- [pray CLI](https://github.com/kiskolabs/pray)
+- [pray.kisko.dev](https://pray.kisko.dev)
+- Upstream skills origin: [marckohlbrugge/37signals-skills](https://github.com/marckohlbrugge/37signals-skills)

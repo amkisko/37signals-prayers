@@ -1,0 +1,16 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/rails-migrations"
+  spec.version = "0.1.0"
+  spec.summary = "Safe schema changes, staged rollouts, and backfills"
+  spec.files = [
+    "README.md",
+    "skills/rails-migrations/SKILL.md"
+  ]
+  spec.exports = {
+    "skill" => {
+      type: "folder",
+      path: "skills/rails-migrations",
+      summary: "Safe schema changes, staged rollouts, and backfills"
+    }
+  }
+end

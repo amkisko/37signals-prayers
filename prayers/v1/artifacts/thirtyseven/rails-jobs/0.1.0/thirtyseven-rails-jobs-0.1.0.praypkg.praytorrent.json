@@ -1,0 +1,16 @@
+{
+  "spec": "pray-torrent-v1",
+  "name": "thirtyseven/rails-jobs",
+  "version": "0.1.0",
+  "artifact_url": "v1/artifacts/thirtyseven/rails-jobs/0.1.0/thirtyseven-rails-jobs-0.1.0.praypkg",
+  "artifact_hash": "sha256:c1af72d34a4dea1a88413a4d5dcaa753caf6e368f39ad64c5429b37ff07daab1",
+  "piece_size": 16384,
+  "length": 3095,
+  "pieces": [
+    "sha256:c1af72d34a4dea1a88413a4d5dcaa753caf6e368f39ad64c5429b37ff07daab1"
+  ],
+  "sources": [
+    "v1/artifacts/thirtyseven/rails-jobs/0.1.0/thirtyseven-rails-jobs-0.1.0.praypkg"
+  ],
+  "trackers": []
+}

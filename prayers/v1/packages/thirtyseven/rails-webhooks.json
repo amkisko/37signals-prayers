@@ -1,0 +1,64 @@
+{
+  "name": "thirtyseven/rails-webhooks",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/rails-webhooks/0.1.0/thirtyseven-rails-webhooks-0.1.0.praypkg",
+      "artifact_hash": "sha256:63595991ee8e36a417bb490cdc6fe30a9cb6ec08ef38deae136adacdba5d4afe",
+      "tree_hash": "sha256:a2c624c4d3cd34974b789e028a2da238046ace5c584ffa70f582adae3067d269",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "skill"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:dbdd39d0b499618ff32d2245bfab4de70a19150578121577a367fd0ba9268dd5",
+      "derived_metadata": {
+        "summary": "Webhook delivery, retries, observability, and signing — # thirtyseven/rails-webhooks",
+        "topics": [
+          "delivery",
+          "webhook",
+          "destination",
+          "webhooks",
+          "tenant"
+        ],
+        "categories": [
+          "security"
+        ],
+        "possible_effects": [
+          "surfaces trust-sensitive behavior"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              19,
+              23,
+              20,
+              33,
+              34,
+              36,
+              32,
+              28,
+              24,
+              36,
+              21,
+              29,
+              23,
+              30,
+              28,
+              36
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 4562,
+        "token_count": 452
+      }
+    }
+  ]
+}

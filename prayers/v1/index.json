@@ -1,0 +1,15 @@
+{
+  "spec": "prayfile-distribution-1",
+  "packages": [
+    "thirtyseven/dhh",
+    "thirtyseven/getting-started",
+    "thirtyseven/overview",
+    "thirtyseven/rails-best-practices-core",
+    "thirtyseven/rails-hotwire-realtime",
+    "thirtyseven/rails-jobs",
+    "thirtyseven/rails-migrations",
+    "thirtyseven/rails-security-multitenancy",
+    "thirtyseven/rails-testing",
+    "thirtyseven/rails-webhooks"
+  ]
+}

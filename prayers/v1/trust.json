@@ -1,0 +1,6 @@
+{
+  "email_confirmation": "required",
+  "passkeys_enabled": false,
+  "ssh_keys_enabled": false,
+  "ssh_agent_signing_enabled": false
+}

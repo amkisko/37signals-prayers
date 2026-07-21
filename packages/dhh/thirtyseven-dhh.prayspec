@@ -1,0 +1,16 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/dhh"
+  spec.version = "0.1.0"
+  spec.summary = "DHH-style Rails review: direct, allergic to over-engineering"
+  spec.files = [
+    "README.md",
+    "skills/dhh/SKILL.md"
+  ]
+  spec.exports = {
+    "skill" => {
+      type: "folder",
+      path: "skills/dhh",
+      summary: "DHH-style Rails review: direct, allergic to over-engineering"
+    }
+  }
+end

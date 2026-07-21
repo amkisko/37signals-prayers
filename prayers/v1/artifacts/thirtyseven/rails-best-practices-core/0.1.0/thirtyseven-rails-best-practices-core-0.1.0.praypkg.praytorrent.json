@@ -1,0 +1,16 @@
+{
+  "spec": "pray-torrent-v1",
+  "name": "thirtyseven/rails-best-practices-core",
+  "version": "0.1.0",
+  "artifact_url": "v1/artifacts/thirtyseven/rails-best-practices-core/0.1.0/thirtyseven-rails-best-practices-core-0.1.0.praypkg",
+  "artifact_hash": "sha256:49f3f979ecf75a6d9d2c84ee6af39a318eb2ce03bfd8b08d0b2015c077c51bc6",
+  "piece_size": 16384,
+  "length": 4226,
+  "pieces": [
+    "sha256:49f3f979ecf75a6d9d2c84ee6af39a318eb2ce03bfd8b08d0b2015c077c51bc6"
+  ],
+  "sources": [
+    "v1/artifacts/thirtyseven/rails-best-practices-core/0.1.0/thirtyseven-rails-best-practices-core-0.1.0.praypkg"
+  ],
+  "trackers": []
+}

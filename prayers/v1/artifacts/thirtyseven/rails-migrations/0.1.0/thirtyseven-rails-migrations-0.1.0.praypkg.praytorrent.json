@@ -1,0 +1,16 @@
+{
+  "spec": "pray-torrent-v1",
+  "name": "thirtyseven/rails-migrations",
+  "version": "0.1.0",
+  "artifact_url": "v1/artifacts/thirtyseven/rails-migrations/0.1.0/thirtyseven-rails-migrations-0.1.0.praypkg",
+  "artifact_hash": "sha256:ab7f3757c70dd378bf8c9de9494717f61263abdd299efbcbd261c5186bec6431",
+  "piece_size": 16384,
+  "length": 2856,
+  "pieces": [
+    "sha256:ab7f3757c70dd378bf8c9de9494717f61263abdd299efbcbd261c5186bec6431"
+  ],
+  "sources": [
+    "v1/artifacts/thirtyseven/rails-migrations/0.1.0/thirtyseven-rails-migrations-0.1.0.praypkg"
+  ],
+  "trackers": []
+}

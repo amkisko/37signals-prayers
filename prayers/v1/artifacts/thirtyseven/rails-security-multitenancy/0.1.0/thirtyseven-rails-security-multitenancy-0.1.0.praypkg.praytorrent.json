@@ -1,0 +1,16 @@
+{
+  "spec": "pray-torrent-v1",
+  "name": "thirtyseven/rails-security-multitenancy",
+  "version": "0.1.0",
+  "artifact_url": "v1/artifacts/thirtyseven/rails-security-multitenancy/0.1.0/thirtyseven-rails-security-multitenancy-0.1.0.praypkg",
+  "artifact_hash": "sha256:c2344e6bc52953303d900837d80b8bd6dd275c35260d7068e941c18a66f1c0d0",
+  "piece_size": 16384,
+  "length": 4024,
+  "pieces": [
+    "sha256:c2344e6bc52953303d900837d80b8bd6dd275c35260d7068e941c18a66f1c0d0"
+  ],
+  "sources": [
+    "v1/artifacts/thirtyseven/rails-security-multitenancy/0.1.0/thirtyseven-rails-security-multitenancy-0.1.0.praypkg"
+  ],
+  "trackers": []
+}

@@ -1,0 +1,63 @@
+{
+  "name": "thirtyseven/getting-started",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/getting-started/0.1.0/thirtyseven-getting-started-0.1.0.praypkg",
+      "artifact_hash": "sha256:99adb6db6fa481d37f45680626c36fa7e7b4848029c5df2c56dcaf2794518677",
+      "tree_hash": "sha256:82f35e47996320439373342e8d9354db75b5c6203062714a3d61474f67c7f733",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "getting-started"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:cbe1a8c15ff163bd063000bfe4ff010d8c9a45a42c4710674a46cf0f19096d07",
+      "derived_metadata": {
+        "summary": "Install pray and consume thirtyseven shared prayers — Pray install and consumer workflow for thirtyseven packages",
+        "topics": [
+          "pray",
+          "install",
+          "37signals",
+          "https",
+          "prayers"
+        ],
+        "categories": [
+          "automation",
+          "security"
+        ],
+        "possible_effects": [
+          "surfaces trust-sensitive behavior",
+          "reduces manual steps"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              4,
+              4,
+              4,
+              3,
+              6,
+              1,
+              5,
+              3,
+              3,
+              11,
+              0,
+              0,
+              13,
+              1,
+              10,
+              8
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 750,
+        "token_count": 76
+      }
+    }
+  ]
+}

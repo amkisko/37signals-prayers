@@ -1,0 +1,16 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/rails-webhooks"
+  spec.version = "0.1.0"
+  spec.summary = "Webhook delivery, retries, observability, and signing"
+  spec.files = [
+    "README.md",
+    "skills/rails-webhooks/SKILL.md"
+  ]
+  spec.exports = {
+    "skill" => {
+      type: "folder",
+      path: "skills/rails-webhooks",
+      summary: "Webhook delivery, retries, observability, and signing"
+    }
+  }
+end

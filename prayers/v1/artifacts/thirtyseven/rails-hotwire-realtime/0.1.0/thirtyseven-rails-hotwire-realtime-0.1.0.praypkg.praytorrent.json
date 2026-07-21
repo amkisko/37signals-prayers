@@ -1,0 +1,16 @@
+{
+  "spec": "pray-torrent-v1",
+  "name": "thirtyseven/rails-hotwire-realtime",
+  "version": "0.1.0",
+  "artifact_url": "v1/artifacts/thirtyseven/rails-hotwire-realtime/0.1.0/thirtyseven-rails-hotwire-realtime-0.1.0.praypkg",
+  "artifact_hash": "sha256:2ebb80f037345a3fe6917fec393698af581a3f00b70b0272d946f854d2abd1d9",
+  "piece_size": 16384,
+  "length": 4289,
+  "pieces": [
+    "sha256:2ebb80f037345a3fe6917fec393698af581a3f00b70b0272d946f854d2abd1d9"
+  ],
+  "sources": [
+    "v1/artifacts/thirtyseven/rails-hotwire-realtime/0.1.0/thirtyseven-rails-hotwire-realtime-0.1.0.praypkg"
+  ],
+  "trackers": []
+}

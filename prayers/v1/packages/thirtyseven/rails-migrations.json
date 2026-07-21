@@ -1,0 +1,64 @@
+{
+  "name": "thirtyseven/rails-migrations",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/rails-migrations/0.1.0/thirtyseven-rails-migrations-0.1.0.praypkg",
+      "artifact_hash": "sha256:ab7f3757c70dd378bf8c9de9494717f61263abdd299efbcbd261c5186bec6431",
+      "tree_hash": "sha256:7d87ea94bba75dd2b79c7b032d317acddf81a82d2aca7c1df8ae9c3590dfeefe",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "skill"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:461b684b10fabaf3491574911384b5ba60a58dc0bf66de0311ea0ed757cf4747",
+      "derived_metadata": {
+        "summary": "Safe schema changes, staged rollouts, and backfills — # thirtyseven/rails-migrations",
+        "topics": [
+          "migrations",
+          "schema",
+          "data",
+          "index",
+          "column"
+        ],
+        "categories": [
+          "general"
+        ],
+        "possible_effects": [
+          "improves package discovery"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              39,
+              22,
+              31,
+              25,
+              40,
+              36,
+              17,
+              32,
+              21,
+              31,
+              41,
+              37,
+              29,
+              26,
+              34,
+              34
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 4876,
+        "token_count": 495
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "thirtyseven/rails-jobs",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/rails-jobs/0.1.0/thirtyseven-rails-jobs-0.1.0.praypkg",
+      "artifact_hash": "sha256:c1af72d34a4dea1a88413a4d5dcaa753caf6e368f39ad64c5429b37ff07daab1",
+      "tree_hash": "sha256:dec928a6b38582a0dacdc888dddb14a5e6b248cf4a2b9942d4f2159fe8861fa6",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "skill"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:92572ce08cc6709c43d7dd6e9e5ddff430a84f1e1ffc25d9039cde4f1f06605e",
+      "derived_metadata": {
+        "summary": "Active Job design, Solid Queue, retries, and orchestration — # thirtyseven/rails-jobs",
+        "topics": [
+          "jobs",
+          "queue",
+          "perform",
+          "current",
+          "later"
+        ],
+        "categories": [
+          "security"
+        ],
+        "possible_effects": [
+          "surfaces trust-sensitive behavior"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              44,
+              34,
+              29,
+              20,
+              35,
+              39,
+              31,
+              25,
+              22,
+              36,
+              30,
+              25,
+              33,
+              46,
+              26,
+              24
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 4982,
+        "token_count": 499
+      }
+    }
+  ]
+}

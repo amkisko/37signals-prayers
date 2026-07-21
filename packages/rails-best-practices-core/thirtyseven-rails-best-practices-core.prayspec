@@ -1,0 +1,16 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/rails-best-practices-core"
+  spec.version = "0.1.0"
+  spec.summary = "Core Rails architecture and modeling from 37signals codebases"
+  spec.files = [
+    "README.md",
+    "skills/rails-best-practices-core/SKILL.md"
+  ]
+  spec.exports = {
+    "skill" => {
+      type: "folder",
+      path: "skills/rails-best-practices-core",
+      summary: "Core Rails architecture and modeling from 37signals codebases"
+    }
+  }
+end

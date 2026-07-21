@@ -1,0 +1,16 @@
+{
+  "spec": "pray-torrent-v1",
+  "name": "thirtyseven/rails-webhooks",
+  "version": "0.1.0",
+  "artifact_url": "v1/artifacts/thirtyseven/rails-webhooks/0.1.0/thirtyseven-rails-webhooks-0.1.0.praypkg",
+  "artifact_hash": "sha256:63595991ee8e36a417bb490cdc6fe30a9cb6ec08ef38deae136adacdba5d4afe",
+  "piece_size": 16384,
+  "length": 2855,
+  "pieces": [
+    "sha256:63595991ee8e36a417bb490cdc6fe30a9cb6ec08ef38deae136adacdba5d4afe"
+  ],
+  "sources": [
+    "v1/artifacts/thirtyseven/rails-webhooks/0.1.0/thirtyseven-rails-webhooks-0.1.0.praypkg"
+  ],
+  "trackers": []
+}

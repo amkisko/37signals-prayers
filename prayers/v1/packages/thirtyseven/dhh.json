@@ -1,0 +1,64 @@
+{
+  "name": "thirtyseven/dhh",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/dhh/0.1.0/thirtyseven-dhh-0.1.0.praypkg",
+      "artifact_hash": "sha256:5971dbd540db0a4e55bdc5d1c4c1f54754ff6b467ed711ca8ee84a6a100996b6",
+      "tree_hash": "sha256:69038d87ecd506d7be5a5108b5d4ca433e5e3f596821ebf0073f5d0afde4e455",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "skill"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:2c6f597b778d060322bf0cceca024028ee28ef5732c779f8d450fed3c3991015",
+      "derived_metadata": {
+        "summary": "DHH-style Rails review: direct, allergic to over-engineering — # thirtyseven/dhh",
+        "topics": [
+          "over",
+          "code",
+          "review",
+          "when",
+          "that"
+        ],
+        "categories": [
+          "general"
+        ],
+        "possible_effects": [
+          "improves package discovery"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              35,
+              24,
+              35,
+              31,
+              37,
+              28,
+              25,
+              32,
+              27,
+              38,
+              27,
+              33,
+              36,
+              20,
+              31,
+              53
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 8974,
+        "token_count": 512
+      }
+    }
+  ]
+}

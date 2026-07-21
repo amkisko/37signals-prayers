@@ -1,0 +1,16 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/rails-hotwire-realtime"
+  spec.version = "0.1.0"
+  spec.summary = "Hotwire, Turbo, Stimulus, and ActionCable realtime practices"
+  spec.files = [
+    "README.md",
+    "skills/rails-hotwire-realtime/SKILL.md"
+  ]
+  spec.exports = {
+    "skill" => {
+      type: "folder",
+      path: "skills/rails-hotwire-realtime",
+      summary: "Hotwire, Turbo, Stimulus, and ActionCable realtime practices"
+    }
+  }
+end

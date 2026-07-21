@@ -1,0 +1,16 @@
+{
+  "spec": "pray-torrent-v1",
+  "name": "thirtyseven/rails-testing",
+  "version": "0.1.0",
+  "artifact_url": "v1/artifacts/thirtyseven/rails-testing/0.1.0/thirtyseven-rails-testing-0.1.0.praypkg",
+  "artifact_hash": "sha256:08434f5c0c7c1cad3ce05c036acd1765fdef06a33a8862f37f34a0152335f2a4",
+  "piece_size": 16384,
+  "length": 2761,
+  "pieces": [
+    "sha256:08434f5c0c7c1cad3ce05c036acd1765fdef06a33a8862f37f34a0152335f2a4"
+  ],
+  "sources": [
+    "v1/artifacts/thirtyseven/rails-testing/0.1.0/thirtyseven-rails-testing-0.1.0.praypkg"
+  ],
+  "trackers": []
+}

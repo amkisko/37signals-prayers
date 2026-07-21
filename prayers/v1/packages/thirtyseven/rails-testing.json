@@ -1,0 +1,64 @@
+{
+  "name": "thirtyseven/rails-testing",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "artifact": "v1/artifacts/thirtyseven/rails-testing/0.1.0/thirtyseven-rails-testing-0.1.0.praypkg",
+      "artifact_hash": "sha256:08434f5c0c7c1cad3ce05c036acd1765fdef06a33a8862f37f34a0152335f2a4",
+      "tree_hash": "sha256:b5a7c201e53ccff94cb05562935c8cc939ca9fb49b58b91254180bfcea8e0594",
+      "yanked": false,
+      "targets": [],
+      "exports": [
+        "skill"
+      ],
+      "signer": "amkisko",
+      "published_at": "1784631192",
+      "signature": "sha256:10c62ab2c2b4f6ebbcf2b8166e51c63047a28b9b3c18f0a9434717596267b25d",
+      "derived_metadata": {
+        "summary": "Minitest, fixtures, and pragmatic Rails test standards — # thirtyseven/rails-testing",
+        "topics": [
+          "tests",
+          "test",
+          "assert",
+          "fixtures",
+          "rails"
+        ],
+        "categories": [
+          "testing"
+        ],
+        "possible_effects": [
+          "improves validation"
+        ],
+        "possible_side_effects": [
+          "may change generated output or managed files"
+        ],
+        "embeddings": [
+          {
+            "model": "pray-hash-bucket-v1",
+            "vector": [
+              22,
+              19,
+              32,
+              33,
+              25,
+              33,
+              12,
+              15,
+              29,
+              58,
+              19,
+              42,
+              30,
+              22,
+              23,
+              53
+            ]
+          }
+        ],
+        "file_count": 2,
+        "character_count": 4458,
+        "token_count": 467
+      }
+    }
+  ]
+}

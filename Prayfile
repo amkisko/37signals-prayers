@@ -1,0 +1,19 @@
+prayfile "1"
+
+target :agents do
+  output "AGENTS.md"
+  skills ".agents/skills"
+end
+
+agent "thirtyseven/getting-started", path: "packages/getting-started", exports: ["getting-started"]
+agent "thirtyseven/overview", path: "packages/overview", exports: ["overview"]
+agent "thirtyseven/rails-best-practices-core", path: "packages/rails-best-practices-core", exports: ["skill"]
+agent "thirtyseven/rails-hotwire-realtime", path: "packages/rails-hotwire-realtime", exports: ["skill"]
+agent "thirtyseven/rails-jobs", path: "packages/rails-jobs", exports: ["skill"]
+agent "thirtyseven/rails-migrations", path: "packages/rails-migrations", exports: ["skill"]
+agent "thirtyseven/rails-security-multitenancy", path: "packages/rails-security-multitenancy", exports: ["skill"]
+agent "thirtyseven/rails-testing", path: "packages/rails-testing", exports: ["skill"]
+agent "thirtyseven/rails-webhooks", path: "packages/rails-webhooks", exports: ["skill"]
+agent "thirtyseven/dhh", path: "packages/dhh", exports: ["skill"]
+
+render mode: :managed, conflict: :fail, churn: :minimal

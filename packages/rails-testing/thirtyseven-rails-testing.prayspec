@@ -1,0 +1,16 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/rails-testing"
+  spec.version = "0.1.0"
+  spec.summary = "Minitest, fixtures, and pragmatic Rails test standards"
+  spec.files = [
+    "README.md",
+    "skills/rails-testing/SKILL.md"
+  ]
+  spec.exports = {
+    "skill" => {
+      type: "folder",
+      path: "skills/rails-testing",
+      summary: "Minitest, fixtures, and pragmatic Rails test standards"
+    }
+  }
+end

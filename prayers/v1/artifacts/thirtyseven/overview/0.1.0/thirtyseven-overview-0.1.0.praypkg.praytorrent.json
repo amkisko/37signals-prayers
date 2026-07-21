@@ -1,0 +1,16 @@
+{
+  "spec": "pray-torrent-v1",
+  "name": "thirtyseven/overview",
+  "version": "0.1.0",
+  "artifact_url": "v1/artifacts/thirtyseven/overview/0.1.0/thirtyseven-overview-0.1.0.praypkg",
+  "artifact_hash": "sha256:1b7a2f361339b85f51de188466a33b096dcd18b947079442ccbb6c06e07f291b",
+  "piece_size": 16384,
+  "length": 1050,
+  "pieces": [
+    "sha256:1b7a2f361339b85f51de188466a33b096dcd18b947079442ccbb6c06e07f291b"
+  ],
+  "sources": [
+    "v1/artifacts/thirtyseven/overview/0.1.0/thirtyseven-overview-0.1.0.praypkg"
+  ],
+  "trackers": []
+}

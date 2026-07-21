@@ -1,0 +1,16 @@
+Package::Specification.new do |spec|
+  spec.name = "thirtyseven/rails-security-multitenancy"
+  spec.version = "0.1.0"
+  spec.summary = "Security and multi-tenant Rails safety practices"
+  spec.files = [
+    "README.md",
+    "skills/rails-security-multitenancy/SKILL.md"
+  ]
+  spec.exports = {
+    "skill" => {
+      type: "folder",
+      path: "skills/rails-security-multitenancy",
+      summary: "Security and multi-tenant Rails safety practices"
+    }
+  }
+end

@@ -1,7 +1,7 @@
 prayfile_lock = "1"
 spec = "0.1"
-generated_by = "pray 1.2.0"
-manifest_hash = "sha256:24de032f7e0622ed297ef0460cee6a7582eefbcb40cf02f1670f3de3cee20c47"
+generated_by = "pray 1.3.0"
+manifest_hash = "sha256:75059953e8f975bc0ac09ab8f92378ac018af98057542ff1185a74ca8d1123de"
 source = []
 
 [[package]]
@@ -105,11 +105,15 @@ exports = ["skill"]
 dependencies = []
 
 [[target]]
-name = "agents"
+name = "compose:AGENTS.md"
 outputs = ["AGENTS.md"]
 
+[[target]]
+name = "tree:.agents/skills"
+outputs = []
+
 [[managed_span]]
-id = "5c45d63b"
+id = "9fdf5701"
 target = "AGENTS.md"
 open_line = 10
 close_line = 34
@@ -120,7 +124,7 @@ source_checksum = "sha256:82f35e47996320439373342e8d9354db75b5c6203062714a3d6147
 silenced = false
 
 [[managed_span]]
-id = "5e3e3529"
+id = "c2eefafd"
 target = "AGENTS.md"
 open_line = 36
 close_line = 53

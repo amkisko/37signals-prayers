@@ -1,7 +1,7 @@
 prayfile_lock = "1"
 spec = "0.1"
-generated_by = "pray 1.4.0"
-manifest_hash = "sha256:75059953e8f975bc0ac09ab8f92378ac018af98057542ff1185a74ca8d1123de"
+generated_by = "pray 1.21.0"
+manifest_hash = "sha256:381cf9c0825ecfa26e5ebb80e009bf6d9af66f85e9232f6c127db9eb2eb5c3a6"
 source = []
 
 [[package]]
@@ -113,10 +113,21 @@ name = "tree:.agents/skills"
 outputs = []
 
 [[managed_span]]
+id = "ae5d334a"
+target = "AGENTS.md"
+open_line = 8
+close_line = 10
+ideal_checksum = "sha256:76999710c29734233eba99ffa1c3305cf4305b299442b3482df350e68610d384"
+package = "local"
+export = ".agents/project.md"
+source_checksum = "sha256:0d7b3ee0b0d6be172b915e47f6752b5033213dfc44ef40660e15295f12f288f4"
+silenced = false
+
+[[managed_span]]
 id = "9fdf5701"
 target = "AGENTS.md"
-open_line = 10
-close_line = 34
+open_line = 12
+close_line = 36
 ideal_checksum = "sha256:82935f27e8e339e65a5b8adadbad1e41ffc0d6a0101fad3c55317e3cbc2f31bb"
 package = "thirtyseven/getting-started"
 export = "getting-started"
@@ -126,10 +137,58 @@ silenced = false
 [[managed_span]]
 id = "c2eefafd"
 target = "AGENTS.md"
-open_line = 36
-close_line = 53
+open_line = 38
+close_line = 55
 ideal_checksum = "sha256:c0894b440353b8974655ac6947c59b1564ecf473e2ad361acf457ef1504d1973"
 package = "thirtyseven/overview"
 export = "overview"
 source_checksum = "sha256:b0c8f03c86e48d7fc049d706ada815f1c1efab965bcbcba00299ce382d291a38"
 silenced = false
+
+[[provisioned]]
+path = ".agents/skills/dhh/SKILL.md"
+content_hash = "sha256:145f02157da7df5e6ce0c52149e601f9335e0310cb552c56f98a627b19414e6c"
+package = "thirtyseven/dhh"
+export = "skill"
+
+[[provisioned]]
+path = ".agents/skills/rails-best-practices-core/SKILL.md"
+content_hash = "sha256:bcf53cedde5f8dcc5adb06e7206f2fe371f57a021c38206e872738c163d57224"
+package = "thirtyseven/rails-best-practices-core"
+export = "skill"
+
+[[provisioned]]
+path = ".agents/skills/rails-hotwire-realtime/SKILL.md"
+content_hash = "sha256:82027b9514a800d26b4274a1a8bcac93bbd6ed4d2284beaba6ffcd8c75bece72"
+package = "thirtyseven/rails-hotwire-realtime"
+export = "skill"
+
+[[provisioned]]
+path = ".agents/skills/rails-jobs/SKILL.md"
+content_hash = "sha256:d0b4b9b6e879b06e90097023824bcb0e1f87d4eb9d247758b08981c51f812cfa"
+package = "thirtyseven/rails-jobs"
+export = "skill"
+
+[[provisioned]]
+path = ".agents/skills/rails-migrations/SKILL.md"
+content_hash = "sha256:1528706453746de455f79f58cfdcc5a0cfbcdba408333a5f4428209761ed4898"
+package = "thirtyseven/rails-migrations"
+export = "skill"
+
+[[provisioned]]
+path = ".agents/skills/rails-security-multitenancy/SKILL.md"
+content_hash = "sha256:f3fd1c899cbbde6ddf4edfded8b94ba382bb35682296c23f352830b0028d99bb"
+package = "thirtyseven/rails-security-multitenancy"
+export = "skill"
+
+[[provisioned]]
+path = ".agents/skills/rails-testing/SKILL.md"
+content_hash = "sha256:3226e5382317dfb7976944615c5b336a78927212f5b3165e913a092632f0c8d7"
+package = "thirtyseven/rails-testing"
+export = "skill"
+
+[[provisioned]]
+path = ".agents/skills/rails-webhooks/SKILL.md"
+content_hash = "sha256:46935162153122f2ab73f9901208950a1749ad895f24fe0ddd95ad8b7a4a292a"
+package = "thirtyseven/rails-webhooks"
+export = "skill"

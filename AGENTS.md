@@ -5,7 +5,9 @@
 Do not edit managed blocks in `AGENTS.md` or provisioned files under `.agents/`.
 To change shared guidance, update `Prayfile` and run `pray install`.
 
+<!-- pray:ae5d334a -->
 ## Shared instructions
+<!-- pray:ae5d334a -->
 
 <!-- pray:9fdf5701 -->
 ## Shared prayers (thirtyseven)
